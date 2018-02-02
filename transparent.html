@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+           content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Title</title>
+    <style>
+        body,html{
+            background: #dddddd;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bar{
+            position: fixed;
+            z-index: 10;
+            right: 0;
+            left: 0;
+            height: 44px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-bottom: 0;
+            background-color: rgba(255, 255, 255, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        p{
+            height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="bar transparent">
+        <div class="title">标题</div>
+    </header>
+    <div>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+        <p>212</p>
+    </div>
+</body>
+<script src="transparent.js"></script>
+<script>
+    new ZYTransparent({
+        element: document.querySelector('.transparent'),
+        top: 0,         // 距离顶部高度(到达该高度即触发)
+        offset: 150,    // 滚动透明距离档设定top值后offset也会随着top向下延伸
+        duration: 15    // 过渡时间
+    })
+</script>
+</html>
