@@ -1,4 +1,7 @@
 # transparent
+# 预览图
+![](./11.gif '预览图')
+
 下载直接引用即可
 ```
 <script src="transparent.js"> </script>
