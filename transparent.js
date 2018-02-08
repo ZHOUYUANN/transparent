@@ -32,8 +32,7 @@
             element: false,
             top: 0,         // 距离顶部高度(到达该高度即触发)
             offset: 150,    // 滚动透明距离档设定top值后offset也会随着top向下延伸
-            duration: 16,   // 过渡时间
-            afterScroll: function () {}
+            duration: 16    // 过渡时间
         },
         init: function() {
             var self = this;
@@ -53,9 +52,6 @@
             var opacity = (y - this.params.top) / this.params.offset + this._A;
             opacity = Math.min(Math.max(this._A, opacity), 1);
             this._style.backgroundColor = 'rgba(' + this._R + ',' + this._G + ',' + this._B + ',' + opacity + ')';
-            if(this.params.offset < y){
-                this.params.afterScroll.call(this, this.params.element)
-            }
             if (this.lastOpacity !== opacity) {
                 this.trigger(this.params.element, 'alpha', {
                     alpha: opacity
