@@ -18,10 +18,7 @@ new ZYTransparent({
     element: document.querySelector('.header'),
     top: 0,              // 距离顶部高度(到达该高度即触发)
     offset: 150,         // 滚动透明距离档设定top值后offset也会随着top向下延伸
-    duration: 15,        // 过渡时间
-    afterScroll: function (e) {
-        console.log('滚动的高度过啦')
-    }
+    duration: 15         // 过渡时间
 })
 ```
 
